@@ -10,3 +10,19 @@ def flatten(l):
   return flatten(l[0]) + (flatten(1[1:]) if len(l) > 1 else []) if type(l) is list else [1]
 flatten ([[1,'a',['cat'],2],[[[3]],'dog'],4,5])
 ```
+
+2- Verilen listenin içindeki elemanları tersine döndüren bir fonksiyon yazın. Eğer listenin içindeki elemanlar da liste içeriyorsa onların elemanlarını da tersine döndürün. Örnek olarak:
+
+input: [[1, 2], [3, 4], [5, 6, 7]]
+
+output: [[7, 6, 5], [4, 3], [2, 1]]
+
+```py
+l= [[1, 2], [3, 4], [5, 6, 7]]
+list=[]
+for i in l:
+  i.reverse()
+  list.append(i)
+list.reverse()
+print (list)  
+```
